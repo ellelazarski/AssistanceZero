@@ -9,3 +9,8 @@ venv.bak
 .DS_Store
 mission_records
 *.whl
+# Ignore compiled shared objects (e.g., C/C++/Cython extensions)
+*.so
+
+# Ignore metadata directories from package builds
+*.egg-info
