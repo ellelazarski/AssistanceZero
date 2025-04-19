@@ -1,0 +1,15 @@
+{"time":"2025-04-14T17:49:54.776810321-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250414_174954-ulyuxsxi/logs/debug-core.log"}
+{"time":"2025-04-14T17:49:54.984827372-04:00","level":"INFO","msg":"created new stream","id":"ulyuxsxi"}
+{"time":"2025-04-14T17:49:54.984892762-04:00","level":"INFO","msg":"stream: started","id":"ulyuxsxi"}
+{"time":"2025-04-14T17:49:54.984933858-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:49:54.985022288-04:00","level":"INFO","msg":"handler: started","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:49:54.985086178-04:00","level":"INFO","msg":"sender: started","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:49:55.183872209-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T17:53:58.402576008-04:00","level":"INFO","msg":"stream: closing","id":"ulyuxsxi"}
+{"time":"2025-04-14T17:53:58.403219506-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T17:53:58.403632612-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T17:53:58.756836549-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T17:53:58.878446231-04:00","level":"INFO","msg":"handler: closed","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:53:58.878545582-04:00","level":"INFO","msg":"sender: closed","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:53:58.878538851-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ulyuxsxi"}
+{"time":"2025-04-14T17:53:58.878706376-04:00","level":"INFO","msg":"stream: closed","id":"ulyuxsxi"}

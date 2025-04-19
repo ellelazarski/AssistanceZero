@@ -1,0 +1,86 @@
+INFO - main - Starting training iteration 0
+[2m[36m(pid=3132591)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 19x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=3132596)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 39x across cluster][0m
+[2m[36m(RolloutWorker pid=3132596)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 39x across cluster][0m
+[2m[36m(RolloutWorker pid=3132596)[0m 2025-04-14 18:33:13,732	WARNING algorithm_config.py:2578 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.[32m [repeated 19x across cluster][0m
+[2m[36m(RolloutWorker pid=3132608)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 40x across cluster][0m
+[2m[36m(RolloutWorker pid=3132608)[0m   F.linear([32m [repeated 20x across cluster][0m
+[2m[36m(RolloutWorker pid=3132596)[0m no player locations found in observation[32m [repeated 57x across cluster][0m
+[2m[36m(RolloutWorker pid=3132596)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 19x across cluster][0m
+2025-04-14 18:34:11,127	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.execution.train_ops.train_one_step` has been deprecated. This will raise an error in the future!
+2025-04-14 18:34:11,879	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+/home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  F.linear(
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return F.linear(input, self.weight, self.bias)
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py:823: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[2m[36m(pid=3136218)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3132606)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 39x across cluster][0m
+[2m[36m(RolloutWorker pid=3132588)[0m   F.linear([32m [repeated 19x across cluster][0m
+[2m[36m(RolloutWorker pid=3132606)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 20x across cluster][0m
+[2m[36m(RolloutWorker pid=3136218)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3136218)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=3136218)[0m 2025-04-14 18:34:13,456	WARNING algorithm_config.py:2578 -- Setting `exploration_config={}` because you set `_enable_rl_module_api=True`. When RLModule API are enabled, exploration_config can not be set. If you want to implement custom exploration behaviour, please modify the `forward_exploration` method of the RLModule at hand. On configs that have a default exploration config, this must be done with `config.exploration_config={}`.
+[2m[36m(RolloutWorker pid=3136218)[0m no player locations found in observation
+[2m[36m(RolloutWorker pid=3136218)[0m no player locations found in observation
+[2m[36m(RolloutWorker pid=3136218)[0m no player locations found in observation
+[2m[36m(RolloutWorker pid=3136218)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3136218)[0m   gym.logger.warn("Casting input x to numpy array.")
+WARNING - train_mbag - Aborted after 0:01:41!
+Traceback (most recent call last):
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 961, in <module>
+    def main(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 190, in automain
+    self.run_commandline()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 312, in run_commandline
+    return self.run(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 276, in run
+    run()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/run.py", line 238, in __call__
+    self.result = self.main_function(*args)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/config/captured_function.py", line 42, in captured_function
+    result = wrapped(*args, **kwargs)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/ppo.py", line 368, in training_step
+    train_results = train_one_step(self, train_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/execution/train_ops.py", line 56, in train_one_step
+    info = do_minibatch_sgd(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/sgd.py", line 129, in do_minibatch_sgd
+    local_worker.learn_on_batch(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/rollout_worker.py", line 810, in learn_on_batch
+    info_out[pid] = policy.learn_on_batch(batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/threading.py", line 24, in wrapper
+    return func(self, *a, **k)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy_v2.py", line 729, in learn_on_batch
+    grads, fetches = self.compute_gradients(postprocessed_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/threading.py", line 24, in wrapper
+    return func(self, *a, **k)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy_v2.py", line 945, in compute_gradients
+    tower_outputs = self._multi_gpu_parallel_grad_calc([postprocessed_batch])
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy_v2.py", line 1448, in _multi_gpu_parallel_grad_calc
+    _worker(shard_idx, model, sample_batch, device)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy_v2.py", line 1390, in _worker
+    loss_out[opt_idx].backward(retain_graph=True)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[0m
+[2m[36m(RolloutWorker pid=3136218)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3136218)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3136218)[0m   return F.linear(input, self.weight, self.bias)

@@ -1,0 +1,15 @@
+{"time":"2025-04-14T18:33:56.658425071-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250414_183356-ufs4kpkz/logs/debug-core.log"}
+{"time":"2025-04-14T18:33:56.84977498-04:00","level":"INFO","msg":"created new stream","id":"ufs4kpkz"}
+{"time":"2025-04-14T18:33:56.849837175-04:00","level":"INFO","msg":"stream: started","id":"ufs4kpkz"}
+{"time":"2025-04-14T18:33:56.849934769-04:00","level":"INFO","msg":"sender: started","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:33:56.849970605-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:33:56.850006659-04:00","level":"INFO","msg":"handler: started","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:33:57.123732639-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T18:34:52.188272425-04:00","level":"INFO","msg":"stream: closing","id":"ufs4kpkz"}
+{"time":"2025-04-14T18:34:52.188306749-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T18:34:52.188390203-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T18:34:52.490654801-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T18:34:52.594018709-04:00","level":"INFO","msg":"handler: closed","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:34:52.59407989-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:34:52.59412357-04:00","level":"INFO","msg":"sender: closed","stream_id":"ufs4kpkz"}
+{"time":"2025-04-14T18:34:52.594255711-04:00","level":"INFO","msg":"stream: closed","id":"ufs4kpkz"}

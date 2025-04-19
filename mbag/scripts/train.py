@@ -7,6 +7,9 @@ from datetime import datetime
 from logging import Logger
 from typing import TYPE_CHECKING, Any, Callable, Dict, Optional, Type, Union, cast
 
+import wandb
+wandb.login()
+
 import ray
 import torch
 from gymnasium import spaces
@@ -75,6 +78,14 @@ else:
     else:
         from typing import Sequence as List
 
+# Added Start
+
+# import logging
+
+# logging.getLogger("ray").setLevel(logging.DEBUG)
+# logging.getLogger("ray.rllib").setLevel(logging.DEBUG)
+
+# End Added
 
 ex = Experiment("train_mbag")
 SACRED_SETTINGS.CONFIG.READ_ONLY_CONFIG = False
@@ -95,6 +106,7 @@ class NoTypeAnnotationsFileStorageObserver(FileStorageObserver):
 
 @ex.config
 def sacred_config(_log):  # noqa
+    # log_level = "INFO" # added
     run = "MbagPPO"
     config: AlgorithmConfig = get_trainable_cls(run).get_default_config()
 
@@ -935,6 +947,15 @@ def sacred_config(_log):  # noqa
 
 make_named_configs(ex)
 
+def recursive_convert(obj):
+    if isinstance(obj, tuple):
+        return list(recursive_convert(item) for item in obj)
+    elif isinstance(obj, dict):
+        return {k: recursive_convert(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [recursive_convert(item) for item in obj]
+    else:
+        return obj
 
 @ex.automain
 def main(
@@ -1021,9 +1042,19 @@ def main(
 
     result = None
     if not _no_train:
+
+        run = wandb.init(
+            entity="el4778-princeton-university",
+            project="AssistanceZero")
+        
         for train_iter in range(num_training_iters):
             _log.info(f"Starting training iteration {train_iter}")
             result = trainer.train()
+
+            episode_reward_mean = result.get("episode_reward_mean")
+            run.log({"episode_reward_mean": episode_reward_mean})
+            # print("Iteration", train_iter, "result:", result, flush=True)
+            # run.log(result)
 
             if trainer.iteration % save_freq == 0:
                 checkpoint = trainer.save()
@@ -1033,6 +1064,8 @@ def main(
     _log.info(f"Saved final checkpoint to {checkpoint}")
 
     trainer.stop()
+
+    run.finish()
 
     if result is None:
         result = {}

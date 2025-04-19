@@ -1,0 +1,15 @@
+{"time":"2025-04-15T10:23:22.528509771-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250415_102322-wyi05iop/logs/debug-core.log"}
+{"time":"2025-04-15T10:23:22.743716835-04:00","level":"INFO","msg":"created new stream","id":"wyi05iop"}
+{"time":"2025-04-15T10:23:22.743774912-04:00","level":"INFO","msg":"stream: started","id":"wyi05iop"}
+{"time":"2025-04-15T10:23:22.743931331-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"wyi05iop"}
+{"time":"2025-04-15T10:23:22.74395815-04:00","level":"INFO","msg":"handler: started","stream_id":"wyi05iop"}
+{"time":"2025-04-15T10:23:22.744102697-04:00","level":"INFO","msg":"sender: started","stream_id":"wyi05iop"}
+{"time":"2025-04-15T10:23:22.886748096-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-15T11:39:27.196290546-04:00","level":"INFO","msg":"stream: closing","id":"wyi05iop"}
+{"time":"2025-04-15T11:39:27.196390809-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-15T11:39:27.196854602-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-15T11:39:27.601509291-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-15T11:39:27.726373004-04:00","level":"INFO","msg":"handler: closed","stream_id":"wyi05iop"}
+{"time":"2025-04-15T11:39:27.726552509-04:00","level":"INFO","msg":"sender: closed","stream_id":"wyi05iop"}
+{"time":"2025-04-15T11:39:27.726546501-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wyi05iop"}
+{"time":"2025-04-15T11:39:27.726682155-04:00","level":"INFO","msg":"stream: closed","id":"wyi05iop"}

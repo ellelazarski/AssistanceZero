@@ -1,0 +1,15 @@
+{"time":"2025-04-14T17:54:33.7320844-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250414_175433-a2sjfpog/logs/debug-core.log"}
+{"time":"2025-04-14T17:54:33.947437001-04:00","level":"INFO","msg":"created new stream","id":"a2sjfpog"}
+{"time":"2025-04-14T17:54:33.947488873-04:00","level":"INFO","msg":"stream: started","id":"a2sjfpog"}
+{"time":"2025-04-14T17:54:33.947587212-04:00","level":"INFO","msg":"sender: started","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:54:33.947583665-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:54:33.947646523-04:00","level":"INFO","msg":"handler: started","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:54:34.106624029-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T17:57:43.273011898-04:00","level":"INFO","msg":"stream: closing","id":"a2sjfpog"}
+{"time":"2025-04-14T17:57:43.273718491-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T17:57:43.274155015-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T17:57:43.760015588-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T17:57:43.883910641-04:00","level":"INFO","msg":"handler: closed","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:57:43.884005912-04:00","level":"INFO","msg":"sender: closed","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:57:43.883995741-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"a2sjfpog"}
+{"time":"2025-04-14T17:57:43.884253116-04:00","level":"INFO","msg":"stream: closed","id":"a2sjfpog"}

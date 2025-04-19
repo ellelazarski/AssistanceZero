@@ -1,0 +1,131 @@
+INFO - main - Starting training iteration 0
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=3687957)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3687957)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687957)[0m   action_dist_inputs = np.log(mcts_policies)
+2025-04-15 12:49:25,480	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+2025-04-15 12:49:26,239	WARNING replay_buffer.py:61 -- Estimated max memory usage for replay buffer is 37.82332416 GB (2048.0 batches of size 64, 18468420 bytes each), available system memory is 67.18121984 GB
+2025-04-15 12:49:27,336	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.execution.train_ops.train_one_step` has been deprecated. This will raise an error in the future!
+/home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  F.linear(
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return F.linear(input, self.weight, self.bias)
+2025-04-15 12:49:27,697	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_action_dist.TorchDistributionWrapper` has been deprecated. Use `ray.rllib.models.torch.torch_distributions.TorchCategorical` instead. This will raise an error in the future!
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py:823: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+INFO - main - Starting training iteration 1
+INFO - main - Starting training iteration 2
+INFO - main - Starting training iteration 3
+INFO - main - Starting training iteration 4
+[2m[36m(pid=3687958)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 5x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=3687958)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687958)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687957)[0m   action_dist_inputs = np.log(mcts_policies)
+2025-04-15 13:16:05,195	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-15 13:16:05,204	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl/2025-04-15_12-23-26/1/checkpoint_000005
+INFO - main - Starting training iteration 5
+INFO - main - Starting training iteration 6
+INFO - main - Starting training iteration 7
+INFO - main - Starting training iteration 8
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687958)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687958)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687957)[0m   action_dist_inputs = np.log(mcts_policies)
+INFO - main - Starting training iteration 9
+2025-04-15 13:42:56,058	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-15 13:42:56,066	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl/2025-04-15_12-23-26/1/checkpoint_000010
+INFO - main - Starting training iteration 10
+INFO - main - Starting training iteration 11
+INFO - main - Starting training iteration 12
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687957)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687958)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(RolloutWorker pid=3687957)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687957)[0m   action_dist_inputs = np.log(mcts_policies)
+INFO - main - Starting training iteration 13
+ERROR - train_mbag - Failed after 1:46:13!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy.py", line 1122, in _worker
+    loss_out[opt_idx].backward(retain_graph=True)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.31 GiB. GPU 0 has a total capacity of 15.67 GiB of which 7.33 GiB is free. Including non-PyTorch memory, this process has 7.00 GiB memory in use. Process 3687957 has 414.00 MiB memory in use. Process 3687958 has 414.00 MiB memory in use. 7.84 GiB allowed; Of the allocated memory 4.48 GiB is allocated by PyTorch, and 2.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 400, in train
+    raise skipped from exception_cause(skipped)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 585, in training_step
+    train_results = train_one_step(self, train_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/execution/train_ops.py", line 56, in train_one_step
+    info = do_minibatch_sgd(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/sgd.py", line 129, in do_minibatch_sgd
+    local_worker.learn_on_batch(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/rollout_worker.py", line 810, in learn_on_batch
+    info_out[pid] = policy.learn_on_batch(batch)
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py", line 679, in learn_on_batch
+    return TorchPolicy.learn_on_batch(self, postprocessed_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/threading.py", line 24, in wrapper
+    return func(self, *a, **k)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy.py", line 469, in learn_on_batch
+    grads, fetches = self.compute_gradients(postprocessed_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/threading.py", line 24, in wrapper
+    return func(self, *a, **k)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy.py", line 669, in compute_gradients
+    tower_outputs = self._multi_gpu_parallel_grad_calc([postprocessed_batch])
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy.py", line 1185, in _multi_gpu_parallel_grad_calc
+    raise last_result[0] from last_result[1]
+ValueError: Error In tower 0 on device cuda:0 during multi GPU parallel gradient calculation:: CUDA out of memory. Tried to allocate 1.31 GiB. GPU 0 has a total capacity of 15.67 GiB of which 7.33 GiB is free. Including non-PyTorch memory, this process has 7.00 GiB memory in use. Process 3687957 has 414.00 MiB memory in use. Process 3687958 has 414.00 MiB memory in use. 7.84 GiB allowed; Of the allocated memory 4.48 GiB is allocated by PyTorch, and 2.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback:
+Traceback (most recent call last):
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/torch_policy.py", line 1122, in _worker
+    loss_out[opt_idx].backward(retain_graph=True)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.31 GiB. GPU 0 has a total capacity of 15.67 GiB of which 7.33 GiB is free. Including non-PyTorch memory, this process has 7.00 GiB memory in use. Process 3687957 has 414.00 MiB memory in use. Process 3687958 has 414.00 MiB memory in use. 7.84 GiB allowed; Of the allocated memory 4.48 GiB is allocated by PyTorch, and 2.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[0m
+
+
+
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3687958)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3687958)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3687958)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=3687958)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3687958)[0m   action_dist_inputs = np.log(mcts_policies)

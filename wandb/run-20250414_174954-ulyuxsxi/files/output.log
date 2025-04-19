@@ -1,0 +1,76 @@
+INFO - main - Starting training iteration 0
+[2m[36m(RolloutWorker pid=3081967)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=3081967)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3081967)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=3081967)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3081967)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=3084423)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 8x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=3081963)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 23x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 23x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m   F.linear([32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3081963)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 7x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-14 17:50:50,422 E 3080755 3080755] (raylet) node_manager.cc:3007: 26 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 1656d3d1e00dee6f72931f7b6967a0335a89bbc27a238d651e878d74, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=3086849)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3084423)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3084423)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(pid=3086862)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+2025-04-14 17:51:40,996	ERROR actor_manager.py:500 -- Ray error, taking actor 5 out of service. The actor died unexpectedly before finishing this task.
+2025-04-14 17:51:41,000	ERROR actor_manager.py:500 -- Ray error, taking actor 8 out of service. The actor died unexpectedly before finishing this task.
+[2m[33m(raylet)[0m [2025-04-14 17:51:50,422 E 3080755 3080755] (raylet) node_manager.cc:3007: 33 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 1656d3d1e00dee6f72931f7b6967a0335a89bbc27a238d651e878d74, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+WARNING - train_mbag - Aborted after 0:04:06!
+Traceback (most recent call last):
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 952, in <module>
+    def main(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 190, in automain
+    self.run_commandline()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 312, in run_commandline
+    return self.run(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 276, in run
+    run()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/run.py", line 238, in __call__
+    self.result = self.main_function(*args)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/config/captured_function.py", line 42, in captured_function
+    result = wrapped(*args, **kwargs)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1043, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 538, in training_step
+    self._sample_and_add_to_replay_buffer()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 472, in _sample_and_add_to_replay_buffer
+    new_sample_batches = synchronous_parallel_sample(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/execution/rollout_ops.py", line 85, in synchronous_parallel_sample
+    sample_batches = worker_set.foreach_worker(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 671, in foreach_worker
+    remote_results = self.__worker_manager.foreach_actor(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 592, in foreach_actor
+    _, remote_results = self.__fetch_result(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 460, in __fetch_result
+    ready, _ = ray.wait(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/auto_init_hook.py", line 24, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/worker.py", line 2755, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python/ray/_raylet.pyx", line 3333, in ray._raylet.CoreWorker.wait
+  File "python/ray/_raylet.pyx", line 445, in ray._raylet.check_status
+KeyboardInterrupt
+[0m
+[2m[36m(RolloutWorker pid=3086862)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=3086862)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m

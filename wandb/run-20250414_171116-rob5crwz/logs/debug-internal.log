@@ -1,0 +1,15 @@
+{"time":"2025-04-14T17:11:16.408041092-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250414_171116-rob5crwz/logs/debug-core.log"}
+{"time":"2025-04-14T17:11:16.604218552-04:00","level":"INFO","msg":"created new stream","id":"rob5crwz"}
+{"time":"2025-04-14T17:11:16.6042761-04:00","level":"INFO","msg":"stream: started","id":"rob5crwz"}
+{"time":"2025-04-14T17:11:16.604395335-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:11:16.604495512-04:00","level":"INFO","msg":"sender: started","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:11:16.604645975-04:00","level":"INFO","msg":"handler: started","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:11:16.832203419-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T17:17:12.906654394-04:00","level":"INFO","msg":"stream: closing","id":"rob5crwz"}
+{"time":"2025-04-14T17:17:12.906731826-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-14T17:17:12.906901646-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-14T17:17:13.266751456-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-14T17:17:13.372409685-04:00","level":"INFO","msg":"handler: closed","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:17:13.372454299-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:17:13.372482067-04:00","level":"INFO","msg":"sender: closed","stream_id":"rob5crwz"}
+{"time":"2025-04-14T17:17:13.372561326-04:00","level":"INFO","msg":"stream: closed","id":"rob5crwz"}

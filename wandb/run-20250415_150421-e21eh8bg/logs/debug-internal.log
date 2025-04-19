@@ -1,0 +1,17 @@
+{"time":"2025-04-15T15:04:21.505250957-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250415_150421-e21eh8bg/logs/debug-core.log"}
+{"time":"2025-04-15T15:04:21.703038266-04:00","level":"INFO","msg":"created new stream","id":"e21eh8bg"}
+{"time":"2025-04-15T15:04:21.703104428-04:00","level":"INFO","msg":"stream: started","id":"e21eh8bg"}
+{"time":"2025-04-15T15:04:21.703233535-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"e21eh8bg"}
+{"time":"2025-04-15T15:04:21.703295472-04:00","level":"INFO","msg":"sender: started","stream_id":"e21eh8bg"}
+{"time":"2025-04-15T15:04:21.703429089-04:00","level":"INFO","msg":"handler: started","stream_id":"e21eh8bg"}
+{"time":"2025-04-15T15:04:21.954583151-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-15T20:09:07.244705189-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/el4778-princeton-university/AssistanceZero/e21eh8bg/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-16T06:00:25.101352371-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-16T06:00:25.101479783-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-16T06:00:25.542784014-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-16T06:00:25.667379115-04:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-04-16T06:00:25.67319659-04:00","level":"INFO","msg":"stream: closing","id":"e21eh8bg"}
+{"time":"2025-04-16T06:00:25.673212788-04:00","level":"INFO","msg":"handler: closed","stream_id":"e21eh8bg"}
+{"time":"2025-04-16T06:00:25.673223895-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"e21eh8bg"}
+{"time":"2025-04-16T06:00:25.673279471-04:00","level":"INFO","msg":"sender: closed","stream_id":"e21eh8bg"}
+{"time":"2025-04-16T06:00:25.673355747-04:00","level":"INFO","msg":"stream: closed","id":"e21eh8bg"}

@@ -24,6 +24,9 @@ from mbag.rllib.mixture_model import MixtureModel
 from mbag.rllib.torch_models import MbagTorchModel
 from mbag.rllib.training_utils import load_policy
 
+# Added
+import json
+
 SETTINGS.CONFIG.READ_ONLY_CONFIG = False
 SETTINGS.CONFIG
 
@@ -220,6 +223,19 @@ def main(  # noqa: C901
         overall_accuracy += episode_result["accuracy"] * (
             episode_result["length"] / total_timesteps
         )
+
+    # Added Start (Save results to JSON file)
+
+    results = {
+    "episode_results": episode_results,
+    "accuracy": overall_accuracy,
+    "cross_entropy": overall_cross_entropy,
+    }
+    metrics_path = os.path.join(observer.dir, "metrics.json")
+    with open(metrics_path, "w") as f:
+        json.dump(results, f, indent=4)
+        
+    # Added End
 
     return {
         "episode_results": episode_results,

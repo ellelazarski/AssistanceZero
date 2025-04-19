@@ -1,0 +1,42 @@
+INFO - main - Starting training iteration 0
+[2m[36m(RolloutWorker pid=3431234)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=3431234)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3431234)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=3431234)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3431234)[0m   action_dist_inputs = np.log(mcts_policies)
+2025-04-14 23:23:33,451	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+ERROR - train_mbag - Failed after 0:10:59!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 400, in train
+    raise skipped from exception_cause(skipped)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 538, in training_step
+    self._sample_and_add_to_replay_buffer()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 496, in _sample_and_add_to_replay_buffer
+    for policy_id, prediction_metrics in self.get_goal_prediction_metrics(
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 355, in get_goal_prediction_metrics
+    for minibatch in minibatches(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/sgd.py", line 54, in minibatches
+    all_slices = samples._get_slice_indices(sgd_minibatch_size)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/deprecation.py", line 125, in _ctor
+    return obj(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/policy/sample_batch.py", line 1201, in _get_slice_indices
+    assert np.all(self[SampleBatch.SEQ_LENS] < slice_size), (
+AssertionError: ERROR: `slice_size` must be larger than the max. seq-len in the batch!
+[0m
+
+[2m[36m(pid=3431235)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=3431235)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 11x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 11x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m   F.linear([32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3431235)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m

@@ -1,0 +1,46 @@
+{
+  "os": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-04-14T21:20:21.927938Z",
+  "args": [
+    "with",
+    "assistancezero_assistant",
+    "checkpoint_to_load_policies=data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/pikl/infinite_blocks_true/bc_human_alone/30_sims_puct_30/2025-04-13_15-43-25/1/checkpoint_000000",
+    "checkpoint_name=pikl_human"
+  ],
+  "program": "-m mbag.scripts.train",
+  "git": {
+    "remote": "https://github.com/ellelazarski/AssistanceZero.git",
+    "commit": "dfa52cbaca44bf77cf2fa1d34ccb01879a8d3676"
+  },
+  "email": "el4778@princeton.edu",
+  "root": "/home/elle/Documents/AssistanceZero",
+  "host": "elle-MS-7E03",
+  "executable": "/home/elle/miniconda3/envs/assistancezero/bin/python",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "797712588800",
+      "used": "30029012992"
+    }
+  },
+  "memory": {
+    "total": "67181219840"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "memoryTotal": "17171480576",
+      "cudaCores": 10240,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

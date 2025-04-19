@@ -1,0 +1,90 @@
+INFO - main - Starting training iteration 0
+[2m[36m(RolloutWorker pid=3438809)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=3438809)[0m   F.linear(
+[2m[36m(RolloutWorker pid=3438809)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=3438809)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=3438809)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=3438806)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 7x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=3438812)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 23x across cluster][0m
+[2m[36m(RolloutWorker pid=3438812)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 23x across cluster][0m
+[2m[36m(RolloutWorker pid=3438805)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=3438805)[0m   F.linear([32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3438805)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3438805)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=3438805)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 7x across cluster][0m
+[2m[36m(pid=3441271)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(pid=3441311)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3441311)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3441311)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=3441311)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3441311)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(pid=3442336)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(pid=3442306)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3442306)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3442306)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[33m(raylet)[0m [2025-04-14 23:26:27,702 E 3437595 3437595] (raylet) node_manager.cc:3007: 24 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-14 23:27:27,896 E 3437595 3437595] (raylet) node_manager.cc:3007: 16 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-14 23:28:03,295	ERROR actor_manager.py:500 -- Ray error, taking actor 5 out of service. The actor died unexpectedly before finishing this task.
+2025-04-14 23:28:03,295	ERROR actor_manager.py:500 -- Ray error, taking actor 6 out of service. The actor died unexpectedly before finishing this task.
+2025-04-14 23:28:03,296	ERROR actor_manager.py:500 -- Ray error, taking actor 7 out of service. The actor died unexpectedly before finishing this task.
+[2m[33m(raylet)[0m [2025-04-14 23:28:27,909 E 3437595 3437595] (raylet) node_manager.cc:3007: 96 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-14 23:29:28,193 E 3437595 3437595] (raylet) node_manager.cc:3007: 96 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=3452177)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3442347)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=3442347)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 5x across cluster][0m
+[2m[36m(pid=3452893)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3452177)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3452177)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(pid=3453075)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=3453075)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=3453075)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(pid=3453777)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3453777)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3453777)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+2025-04-14 23:30:22,220	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff883b52afe893effdd16f966601000000 Worker ID: 99fbe94009bd54d0d114b274248f3e38b5647e9129465d0ca1e53e63 Node ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab Worker IP address: 10.51.114.46 Worker port: 42479 Worker PID: 3438805 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+2025-04-14 23:30:23,822	ERROR actor_manager.py:500 -- Ray error, taking actor 3 out of service. The actor died unexpectedly before finishing this task.
+[2m[36m(pid=3455485)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3455865)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=3455865)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[33m(raylet)[0m [2025-04-14 23:30:28,194 E 3437595 3437595] (raylet) node_manager.cc:3007: 85 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 9b504638298fc9ca792d97c00fef129f631d23423952a5b477c662ab, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-14 23:34:21,901	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+ERROR - train_mbag - Failed after 0:08:57!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 400, in train
+    raise skipped from exception_cause(skipped)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 538, in training_step
+    self._sample_and_add_to_replay_buffer()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 514, in _sample_and_add_to_replay_buffer
+    self.local_replay_buffer.add(new_sample_batch)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/replay_buffers/multi_agent_replay_buffer.py", line 229, in add
+    self._add_to_underlying_buffer(policy_id, sample_batch, **kwargs)
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/replay_buffer.py", line 153, in _add_to_underlying_buffer
+    self.replay_buffers[policy_id].add(slice, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/replay_buffers/replay_buffer.py", line 207, in add
+    warn_replay_capacity(item=batch, num_items=self.capacity / batch.count)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/replay_buffers/replay_buffer.py", line 59, in warn_replay_capacity
+    raise ValueError(msg)
+ValueError: Estimated max memory usage for replay buffer is 74.51418624 GB (4096.0 batches of size 64, 18191940 bytes each), available system memory is 67.18121984 GB
+[0m
+
+[2m[36m(pid=3455860)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=3455860)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=3455860)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 5x across cluster][0m

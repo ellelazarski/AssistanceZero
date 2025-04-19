@@ -16,7 +16,7 @@ def make_named_configs(ex: Experiment):
         randomize_first_episode_length = True
         random_start_locations = True
         num_training_iters = 100
-        horizon = 1500
+        horizon = 500 # 1500
         teleportation = False
         inf_blocks = True
         entropy_coeff_start = 0.03
@@ -34,7 +34,7 @@ def make_named_configs(ex: Experiment):
         model = "convolutional"
         filter_size = 5
         hidden_channels = 64
-        sgd_minibatch_size = 512
+        sgd_minibatch_size = 16 # 512
         num_layers = 6
         scale_obs = True
         vf_share_layers = True
@@ -48,6 +48,7 @@ def make_named_configs(ex: Experiment):
         line_of_sight_masking = True
         custom_action_dist = "mbag_bilevel_categorical"
         experiment_tag = f"ppo_human/infinite_blocks_{str(inf_blocks).lower()}"
+        # log_level = "DEBUG" # added
 
     @ex.named_config
     def alphazero_human():
@@ -360,12 +361,12 @@ def make_named_configs(ex: Experiment):
         teleportation = False
         inf_blocks = True
 
-        num_training_iters = 2000
-        num_workers = 16
-        num_envs_per_worker = 16
+        num_training_iters = 100 # 2000
+        num_workers = 1 # 16
+        num_envs_per_worker = 1 # 16
         max_seq_len = 64
         rollout_fragment_length = max_seq_len
-        sample_batch_size = 16384
+        sample_batch_size = 4096 # 8192 # 16384
         sample_freq = 4
         # Train batch size is specified in terms of replay_buffer_storage_unit, i.e.,
         # sequences.
@@ -374,19 +375,20 @@ def make_named_configs(ex: Experiment):
         use_model_replay_buffer = False
         replay_buffer_storage_unit = "sequences"
         # Replay buffer capacities are specified in timesteps.
-        replay_buffer_size = 262144
-        num_gpus = 1.0
+        replay_buffer_size = 65536 # 131072 # 262144
+        num_gpus = 0.5 # 1.0
         num_gpus_per_worker = 0.12
         num_sgd_iter = 1
         batch_mode = "truncate_episodes"
         model = "convolutional_alpha_zero"
         filter_size = 5
         hidden_channels = 64
-        sgd_minibatch_size = 1024
+        sgd_minibatch_size = 128 # 256 # 1024
         num_layers = 8
         scale_obs = True
         vf_share_layers = True
         vf_scale = 1
+        interleave_lstm = True # ADDED
         interleave_lstm_every = num_layers // 2
 
         num_simulations = 100

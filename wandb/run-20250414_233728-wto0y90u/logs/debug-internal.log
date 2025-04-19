@@ -1,0 +1,10 @@
+{"time":"2025-04-14T23:37:28.136291027-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250414_233728-wto0y90u/logs/debug-core.log"}
+{"time":"2025-04-14T23:37:28.346677425-04:00","level":"INFO","msg":"created new stream","id":"wto0y90u"}
+{"time":"2025-04-14T23:37:28.346774736-04:00","level":"INFO","msg":"stream: started","id":"wto0y90u"}
+{"time":"2025-04-14T23:37:28.346858848-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"wto0y90u"}
+{"time":"2025-04-14T23:37:28.346944456-04:00","level":"INFO","msg":"handler: started","stream_id":"wto0y90u"}
+{"time":"2025-04-14T23:37:28.347062389-04:00","level":"INFO","msg":"sender: started","stream_id":"wto0y90u"}
+{"time":"2025-04-14T23:37:28.486691284-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-14T23:58:57.744440563-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/el4778-princeton-university/AssistanceZero/wto0y90u/file_stream\": write tcp 10.51.114.46:52510->35.186.228.49:443: write: broken pipe"}
+{"time":"2025-04-15T00:09:44.006402171-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/el4778-princeton-university/AssistanceZero/wto0y90u/file_stream\": unexpected EOF"}
+{"time":"2025-04-15T00:28:58.359389652-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/el4778-princeton-university/AssistanceZero/wto0y90u/file_stream\": unexpected EOF"}
