@@ -1,5 +1,6 @@
 import torch
 from sacred import Experiment
+import os
 
 # flake8: noqa: F841
 
@@ -361,35 +362,35 @@ def make_named_configs(ex: Experiment):
         teleportation = False
         inf_blocks = True
 
-        num_training_iters = 100 # 2000
-        num_workers = 1 # 16
-        num_envs_per_worker = 1 # 16
+        num_training_iters = 2000
+        num_workers = 4 # 16
+        num_envs_per_worker = 4 # 16
+        num_cpus_per_worker = 4 # Added to prevent system OOM
         max_seq_len = 64
         rollout_fragment_length = max_seq_len
-        sample_batch_size = 4096 # 8192 # 16384
+        sample_batch_size = 2048 # 4096 # 16384
         sample_freq = 4
-        # Train batch size is specified in terms of replay_buffer_storage_unit, i.e.,
-        # sequences.
-        train_batch_size = 256
+        train_batch_size = 64 # 128 # 256
         use_replay_buffer = True
         use_model_replay_buffer = False
         replay_buffer_storage_unit = "sequences"
-        # Replay buffer capacities are specified in timesteps.
-        replay_buffer_size = 65536 # 131072 # 262144
-        num_gpus = 0.5 # 1.0
+        replay_buffer_size = 16384 # 65536 # 262144
+        num_gpus = 1.0
         num_gpus_per_worker = 0.12
         num_sgd_iter = 1
         batch_mode = "truncate_episodes"
         model = "convolutional_alpha_zero"
         filter_size = 5
         hidden_channels = 64
-        sgd_minibatch_size = 128 # 256 # 1024
+        sgd_minibatch_size = 256# 512 # 1024
         num_layers = 8
         scale_obs = True
         vf_share_layers = True
         vf_scale = 1
-        interleave_lstm = True # ADDED
         interleave_lstm_every = num_layers // 2
+
+        # Added memory optimizations
+        os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True,max_split_size_mb:128"
 
         num_simulations = 100
         use_bilevel_action_selection = True

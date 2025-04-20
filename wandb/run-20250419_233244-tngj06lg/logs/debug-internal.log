@@ -1,0 +1,15 @@
+{"time":"2025-04-19T23:32:44.11536648-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/home/elle/Documents/AssistanceZero/wandb/run-20250419_233244-tngj06lg/logs/debug-core.log"}
+{"time":"2025-04-19T23:32:44.334841109-04:00","level":"INFO","msg":"created new stream","id":"tngj06lg"}
+{"time":"2025-04-19T23:32:44.334900667-04:00","level":"INFO","msg":"stream: started","id":"tngj06lg"}
+{"time":"2025-04-19T23:32:44.334924137-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:32:44.335078812-04:00","level":"INFO","msg":"handler: started","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:32:44.335048665-04:00","level":"INFO","msg":"sender: started","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:32:44.487321823-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-19T23:40:52.778836291-04:00","level":"INFO","msg":"stream: closing","id":"tngj06lg"}
+{"time":"2025-04-19T23:40:52.779488356-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-19T23:40:52.779936258-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-19T23:40:53.176451764-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-19T23:40:53.309549049-04:00","level":"INFO","msg":"handler: closed","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:40:53.309654473-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:40:53.309705117-04:00","level":"INFO","msg":"sender: closed","stream_id":"tngj06lg"}
+{"time":"2025-04-19T23:40:53.30981674-04:00","level":"INFO","msg":"stream: closed","id":"tngj06lg"}

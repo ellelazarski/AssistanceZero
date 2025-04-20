@@ -1,0 +1,125 @@
+INFO - main - Starting training iteration 0
+[2m[36m(pid=4151672)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 15x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=4151669)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 32x across cluster][0m
+[2m[36m(RolloutWorker pid=4151669)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 32x across cluster][0m
+[2m[36m(RolloutWorker pid=4151680)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=4151680)[0m   F.linear(
+[2m[36m(RolloutWorker pid=4151680)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=4151673)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=4151673)[0m   action_dist_inputs = np.log(mcts_policies)
+2025-04-19 17:09:23,436	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffffc974fbc9768766a5569ab15401000000 Worker ID: 9c935036a0b0ca9a0397a8f6e7b824ca0a648ec02f00946a6f01c9f1 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 46573 Worker PID: 4151669 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+2025-04-19 17:09:25,676	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff3330d4be7a19d021d99be5a101000000 Worker ID: 6c949ede0abe78ab9ac30741b1240501c621b59a8306d65edad93e24 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 41355 Worker PID: 4151661 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(pid=4156214)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=4151675)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=4151675)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=4151666)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 31x across cluster][0m
+[2m[36m(RolloutWorker pid=4151675)[0m   F.linear([32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=4151666)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=4151666)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 15x across cluster][0m
+[2m[36m(RolloutWorker pid=4151666)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 15x across cluster][0m
+2025-04-19 17:09:27,181	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffffb5ef9368362cb3cef932aa2a01000000 Worker ID: 0ae1f294d85b78587dc714c429e0aefabf98c7c6b9ae0376ee9826bc Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 41815 Worker PID: 4151681 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+2025-04-19 17:09:28,079	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff61ccf72b85c9f24b81f8e72c01000000 Worker ID: 49e910d478fe8cbcc98b4773124bd71a3df22649b8da5350313561b8 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 39215 Worker PID: 4151674 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+2025-04-19 17:09:33,933	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffffc78ac324ac3701aa33c994b201000000 Worker ID: 52847a21bbae0356186e6dbd837dd949b00acdd1554a29c846be32a7 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 44559 Worker PID: 4151679 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(RolloutWorker pid=4156214)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=4156214)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(pid=4156624)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+2025-04-19 17:09:36,604	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffffbdfb0ca41829b8da5418f88601000000 Worker ID: 4b5e7ea64034da9de84610ba7d70675615d30d7b19da0f0c66146505 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 35977 Worker PID: 4151666 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(RolloutWorker pid=4156707)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=4156707)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(pid=4156761)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+2025-04-19 17:09:46,190	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff8a1da418a7d763a1bc7f7d7f01000000 Worker ID: 6101908383855b8a67a48d481b65079ab8c8fb418af53062c14a9254 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 41971 Worker PID: 4151680 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[33m(raylet)[0m [2025-04-19 17:09:46,191 E 4150462 4150462] (raylet) node_manager.cc:3007: 11 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-19 17:09:50,089	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff8f30a72b29df48f22dd8c50b01000000 Worker ID: bd33396ce4498055aa7810e02607ecfd138dd056052a603576f66932 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 41777 Worker PID: 4151677 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(RolloutWorker pid=4157295)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 8x across cluster][0m
+[2m[36m(RolloutWorker pid=4157295)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 8x across cluster][0m
+[2m[36m(pid=4157295)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 3x across cluster][0m
+2025-04-19 17:10:00,800	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff9e761df37c7492aa7d5572e601000000 Worker ID: 1eb4da125168d8dfcab2664ec2afe694051a90c81a9f451700c9dbe1 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 37329 Worker PID: 4151673 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(RolloutWorker pid=4157295)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=4157295)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(pid=4157931)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=4157931)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=4157931)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(pid=4159157)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=4158550)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=4158550)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 6x across cluster][0m
+2025-04-19 17:10:22,486	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffffa0b48764ef6ae0e1f50d8b2f01000000 Worker ID: 98335eb1928ecc5cd9d818931ddc2f095a408ea403529ddbc1a3ebc1 Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 45515 Worker PID: 4151668 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(pid=4159763)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=4159157)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=4159157)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(pid=4159809)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[33m(raylet)[0m [2025-04-19 17:10:46,191 E 4150462 4150462] (raylet) node_manager.cc:3007: 36 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-19 17:11:32,194	WARNING worker.py:2058 -- A worker died or was killed while executing a task by an unexpected system error. To troubleshoot the problem, check the logs for the dead worker. RayTask ID: ffffffffffffffff52eb05103df07c3fdf108e7a01000000 Worker ID: 962e8ce7d32777734072a5fa9cc879bd053f16cf33fe079e3625980e Node ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832 Worker IP address: 10.51.114.46 Worker port: 34993 Worker PID: 4151672 Worker exit type: SYSTEM_ERROR Worker exit detail: Worker unexpectedly exits with a connection error code 2. End of file. There are some potential root causes. (1) The process is killed by SIGKILL by OOM killer due to high memory usage. (2) ray stop --force is called. (3) The worker is crashed unexpectedly due to SIGSEGV or other unexpected errors.
+[2m[36m(RolloutWorker pid=4159811)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=4159811)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 6x across cluster][0m
+[2m[36m(pid=4162487)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-19 17:11:46,192 E 4150462 4150462] (raylet) node_manager.cc:3007: 56 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 6b5f8bdb1c0df4f663fa5739ebaac847c2d4faf85d4322e14544a832, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-19 17:13:26,541	ERROR actor_manager.py:500 -- Ray error, taking actor 2 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,541	ERROR actor_manager.py:500 -- Ray error, taking actor 3 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,550	ERROR actor_manager.py:500 -- Ray error, taking actor 5 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,550	ERROR actor_manager.py:500 -- Ray error, taking actor 6 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 8 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 9 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 10 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 11 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 12 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 13 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 14 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 15 out of service. The actor died unexpectedly before finishing this task.
+2025-04-19 17:13:26,558	ERROR actor_manager.py:500 -- Ray error, taking actor 16 out of service. The actor died unexpectedly before finishing this task.
+WARNING - train_mbag - Aborted after 0:06:30!
+Traceback (most recent call last):
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 961, in <module>
+    def main(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 190, in automain
+    self.run_commandline()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 312, in run_commandline
+    return self.run(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/experiment.py", line 276, in run
+    run()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/run.py", line 238, in __call__
+    self.result = self.main_function(*args)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/sacred/config/captured_function.py", line 42, in captured_function
+    result = wrapped(*args, **kwargs)
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 397, in train
+    result = self.step()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 853, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2838, in _run_one_training_iteration
+    results = self.training_step()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 538, in training_step
+    self._sample_and_add_to_replay_buffer()
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero.py", line 472, in _sample_and_add_to_replay_buffer
+    new_sample_batches = synchronous_parallel_sample(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/execution/rollout_ops.py", line 85, in synchronous_parallel_sample
+    sample_batches = worker_set.foreach_worker(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 671, in foreach_worker
+    remote_results = self.__worker_manager.foreach_actor(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 592, in foreach_actor
+    _, remote_results = self.__fetch_result(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 460, in __fetch_result
+    ready, _ = ray.wait(
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/auto_init_hook.py", line 24, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/worker.py", line 2755, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python/ray/_raylet.pyx", line 3333, in ray._raylet.CoreWorker.wait
+  File "python/ray/_raylet.pyx", line 445, in ray._raylet.check_status
+KeyboardInterrupt
+[0m
+[2m[36m(RolloutWorker pid=4162572)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=4162572)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 6x across cluster][0m
+[2m[36m(pid=4162572)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m

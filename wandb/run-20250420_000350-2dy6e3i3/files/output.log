@@ -1,0 +1,474 @@
+INFO - main - Starting training iteration 0
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=78559)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/ray-logging.html#log-deduplication for more options.)[0m
+[2m[36m(RolloutWorker pid=78559)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 11x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 11x across cluster][0m
+2025-04-20 00:22:12,747	WARNING deprecation.py:50 -- DeprecationWarning: `_get_slice_indices` has been deprecated. This will raise an error in the future!
+2025-04-20 00:22:13,147	WARNING replay_buffer.py:61 -- Estimated max memory usage for replay buffer is 18.580312064 GB (1024.0 batches of size 64, 18144836 bytes each), available system memory is 67.18121984 GB
+2025-04-20 00:22:13,707	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.execution.train_ops.train_one_step` has been deprecated. This will raise an error in the future!
+/home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  F.linear(
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return F.linear(input, self.weight, self.bias)
+2025-04-20 00:22:14,236	WARNING deprecation.py:50 -- DeprecationWarning: `ray.rllib.models.torch.torch_action_dist.TorchDistributionWrapper` has been deprecated. Use `ray.rllib.models.torch.torch_distributions.TorchCategorical` instead. This will raise an error in the future!
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/autograd/graph.py:823: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/numpy/core/fromnumeric.py:3440: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+INFO - main - Starting training iteration 1
+INFO - main - Starting training iteration 2
+INFO - main - Starting training iteration 3
+INFO - main - Starting training iteration 4
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 9x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear([32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=78556)[0m   gym.logger.warn("Casting input x to numpy array.")
+2025-04-20 00:41:04,095	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 00:41:04,103	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000005
+INFO - main - Starting training iteration 5
+INFO - main - Starting training iteration 6
+INFO - main - Starting training iteration 7
+INFO - main - Starting training iteration 8
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear([32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78557)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78557)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(pid=88609)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78559)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 7x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   F.linear([32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78559)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+INFO - main - Starting training iteration 9
+[2m[33m(raylet)[0m [2025-04-20 00:59:44,836 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 00:59:50,128	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 00:59:50,136	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000010
+INFO - main - Starting training iteration 10
+INFO - main - Starting training iteration 11
+INFO - main - Starting training iteration 12
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78556)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=91839)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=88609)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=88609)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+INFO - main - Starting training iteration 13
+INFO - main - Starting training iteration 14
+2025-04-20 01:18:32,693	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 01:18:32,698	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000015
+INFO - main - Starting training iteration 15
+INFO - main - Starting training iteration 16
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[33m(raylet)[0m [2025-04-20 01:18:44,845 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=95079)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=91839)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=91839)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+INFO - main - Starting training iteration 17
+INFO - main - Starting training iteration 18
+INFO - main - Starting training iteration 19
+2025-04-20 01:37:16,320	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 01:37:16,325	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000020
+INFO - main - Starting training iteration 20
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78557)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[33m(raylet)[0m [2025-04-20 01:37:44,855 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=97605)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=95079)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=95079)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+2025-04-20 01:46:23,208	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+[2m[33m(raylet)[0m [2025-04-20 01:46:44,860 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 01:59:02,691	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 01:59:02,695	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Starting training iteration 21
+INFO - main - Starting training iteration 22
+INFO - main - Starting training iteration 23
+INFO - main - Starting training iteration 24
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=97605)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78557)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=100697)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=97605)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 02:01:44,868 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 02:06:12,935	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+2025-04-20 02:18:50,359	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:18:50,363	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:18:50,709	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:18:50,716	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000025
+INFO - main - Starting training iteration 25
+INFO - main - Starting training iteration 26
+INFO - main - Starting training iteration 27
+INFO - main - Starting training iteration 28
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=104223)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=100697)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=100697)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 02:20:44,878 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 02:25:39,530	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+2025-04-20 02:38:19,999	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:38:20,002	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Starting training iteration 29
+2025-04-20 02:38:29,372	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:38:29,379	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000030
+INFO - main - Starting training iteration 30
+INFO - main - Starting training iteration 31
+INFO - main - Starting training iteration 32
+[2m[36m(RolloutWorker pid=104223)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78556)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=107741)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=104223)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 02:39:44,888 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 02:45:10,994	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+2025-04-20 02:57:55,898	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:57:55,904	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Starting training iteration 33
+INFO - main - Starting training iteration 34
+2025-04-20 02:58:14,779	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 02:58:14,788	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000035
+INFO - main - Starting training iteration 35
+INFO - main - Starting training iteration 36
+[2m[36m(RolloutWorker pid=107741)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78557)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=111311)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=107741)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 02:58:44,897 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 03:04:43,372	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+2025-04-20 03:17:25,306	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 03:17:25,310	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Starting training iteration 37
+INFO - main - Starting training iteration 38
+INFO - main - Starting training iteration 39
+2025-04-20 03:17:52,249	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 03:17:52,257	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000040
+INFO - main - Starting training iteration 40
+[2m[36m(RolloutWorker pid=111311)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78556)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[36m(pid=114848)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=111311)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 03:18:44,908 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 03:24:10,926	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+[2m[36m(pid=117070)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=114848)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=114848)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+INFO - main - Starting training iteration 41
+[2m[36m(pid=117998)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=117070)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=117070)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+INFO - main - Starting training iteration 42
+[2m[36m(pid=118526)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=117998)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=117998)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+INFO - main - Starting training iteration 43
+[2m[36m(pid=119414)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=118526)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=118526)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+INFO - main - Starting training iteration 44
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78556)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[33m(raylet)[0m [2025-04-20 03:37:44,918 E 77352 77352] (raylet) node_manager.cc:3007: 53 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=121216)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 5x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 2x across cluster][0m
+[2m[36m(pid=122280)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=122280)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=122280)[0m   gym.logger.warn("Casting input x to numpy array.")
+2025-04-20 03:56:41,726	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 03:56:41,733	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000045
+INFO - main - Starting training iteration 45
+[2m[33m(raylet)[0m [2025-04-20 03:56:44,934 E 77352 77352] (raylet) node_manager.cc:3007: 26 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+INFO - main - Starting training iteration 46
+[2m[36m(pid=123474)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=122326)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=122326)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(pid=124058)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(pid=124465)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=124465)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=124465)[0m   gym.logger.warn("Casting input x to numpy array.")
+INFO - main - Starting training iteration 47
+[2m[36m(pid=125505)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=124526)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=124526)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+INFO - main - Starting training iteration 48
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/torch_models.py:84: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=78556)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)
+[2m[36m(RolloutWorker pid=78556)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78556)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78556)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[33m(raylet)[0m [2025-04-20 03:57:44,940 E 77352 77352] (raylet) node_manager.cc:3007: 49 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=127317)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future![32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 2x across cluster][0m
+2025-04-20 04:16:18,270	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 04:16:18,274	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Starting training iteration 49
+2025-04-20 04:16:25,926	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 04:16:25,933	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+INFO - main - Saved checkpoint to data/logs/MbagAlphaZero/2_players/11x10x10/craftassist/alphazero_assistant/infinite_blocks_true/human_pikl_2.0/2025-04-20_00-03-43/1/checkpoint_000050
+INFO - main - Starting training iteration 50
+INFO - main - Starting training iteration 51
+INFO - main - Starting training iteration 52
+[2m[36m(pid=127347)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=127347)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78558)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78557)[0m   F.linear(
+[2m[36m(RolloutWorker pid=78557)[0m   return F.linear(input, self.weight, self.bias)
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log
+[2m[36m(RolloutWorker pid=78558)[0m   action_dist_inputs = np.log(mcts_policies)
+[2m[33m(raylet)[0m [2025-04-20 04:16:44,950 E 77352 77352] (raylet) node_manager.cc:3007: 11 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=129578)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=78558)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=78558)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 4x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/torch/nn/modules/linear.py:125: UserWarning: Could not parse CUBLAS_WORKSPACE_CONFIG, using default workspace size of 8519680 bytes. (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:144.)[32m [repeated 6x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m   F.linear([32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m   return F.linear(input, self.weight, self.bias)[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m /home/elle/Documents/AssistanceZero/mbag/rllib/alpha_zero/alpha_zero_policy.py:585: RuntimeWarning: divide by zero encountered in log[32m [repeated 3x across cluster][0m
+[2m[36m(RolloutWorker pid=127347)[0m   action_dist_inputs = np.log(mcts_policies)[32m [repeated 3x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 04:17:44,957 E 77352 77352] (raylet) node_manager.cc:3007: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=129692)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=129578)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m[32m [repeated 2x across cluster][0m
+[2m[36m(RolloutWorker pid=129578)[0m   gym.logger.warn("Casting input x to numpy array.")[32m [repeated 2x across cluster][0m
+[2m[33m(raylet)[0m [2025-04-20 04:22:45,217 E 77352 77352] (raylet) node_manager.cc:3007: 63 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+2025-04-20 04:23:03,849	ERROR actor_manager.py:500 -- Ray error, taking actor 2 out of service. The actor died unexpectedly before finishing this task.
+[2m[33m(raylet)[0m [2025-04-20 04:23:45,403 E 77352 77352] (raylet) node_manager.cc:3007: 111 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:24:45,403 E 77352 77352] (raylet) node_manager.cc:3007: 110 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:25:45,404 E 77352 77352] (raylet) node_manager.cc:3007: 111 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:26:45,528 E 77352 77352] (raylet) node_manager.cc:3007: 111 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:27:45,723 E 77352 77352] (raylet) node_manager.cc:3007: 111 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:28:45,914 E 77352 77352] (raylet) node_manager.cc:3007: 111 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:29:45,992 E 77352 77352] (raylet) node_manager.cc:3007: 110 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:30:45,992 E 77352 77352] (raylet) node_manager.cc:3007: 110 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[33m(raylet)[0m [2025-04-20 04:31:45,993 E 77352 77352] (raylet) node_manager.cc:3007: 52 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675, IP: 10.51.114.46) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.51.114.46`
+[2m[33m(raylet)[0m
+[2m[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2m[36m(pid=167522)[0m DeprecationWarning: `DirectStepOptimizer` has been deprecated. This will raise an error in the future!
+[2m[36m(RolloutWorker pid=129692)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=129692)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=167522)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=167522)[0m   gym.logger.warn("Casting input x to numpy array.")
+[2m[36m(RolloutWorker pid=167522)[0m /home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/gymnasium/spaces/box.py:230: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+[2m[36m(RolloutWorker pid=167522)[0m   gym.logger.warn("Casting input x to numpy array.")
+2025-04-20 04:33:31,005	ERROR actor_manager.py:500 -- Ray error, taking actor 4 out of service. The actor died unexpectedly before finishing this task.
+2025-04-20 04:33:38,637	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+2025-04-20 04:33:38,640	WARNING policy.py:137 -- Can not figure out a durable policy name for <class 'mbag.rllib.alpha_zero.alpha_zero_policy.MbagAlphaZeroPolicy'>. You are probably trying to checkpoint a custom policy. Raw policy class may cause problems when the checkpoint needs to be loaded in the future. To fix this, make sure you add your custom policy in rllib.algorithms.registry.POLICIES.
+ERROR - train_mbag - Failed after 4:29:55!
+Traceback (most recent calls WITHOUT Sacred internals):
+  File "/home/elle/Documents/AssistanceZero/mbag/scripts/train.py", line 1052, in main
+    result = trainer.train()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 455, in train
+    self.log_result(result)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 2163, in log_result
+    self.callbacks.on_train_result(algorithm=self, result=result)
+  File "/home/elle/Documents/AssistanceZero/mbag/rllib/callbacks.py", line 41, in on_train_result
+    algorithm.workers.foreach_worker(update_worker_envs_global_timestep)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 680, in foreach_worker
+    handle_remote_call_result_errors(remote_results, self._ignore_worker_failures)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 76, in handle_remote_call_result_errors
+    raise r.get()
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 481, in __fetch_result
+    result = ray.get(r)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/auto_init_hook.py", line 24, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/elle/miniconda3/envs/assistancezero/lib/python3.9/site-packages/ray/_private/worker.py", line 2549, in get
+    raise value
+ray.exceptions.OutOfMemoryError: Task was killed due to the node running low on memory.
+Memory on the node (IP: 10.51.114.46, ID: dbc426fa6a7324206269cfd57bb084af13423ad6f30cc387f9b47675) where the task (task ID: ffffffffffffffff6580390d43b93d62ce35af6801000000, name=RolloutWorker.__init__, pid=167485, memory used=0.21GB) was running was 60.21GB / 62.57GB (0.96238), which exceeds the memory usage threshold of 0.95. Ray killed this worker (ID: 8c67754cd31308d5c14470fe05c578507edc72743917c8eded516df5) because it was the most recently scheduled task; to see more information about memory usage on this node, use `ray logs raylet.out -ip 10.51.114.46`. To see the logs of the worker, use `ray logs worker-8c67754cd31308d5c14470fe05c578507edc72743917c8eded516df5*out -ip 10.51.114.46. Top 10 memory users:
+PID	MEM(GB)	COMMAND
+77139	17.16	python -m mbag.scripts.train with assistancezero_assistant checkpoint_to_load_policies=data/logs/Mba...
+78558	10.59	ray::RolloutWorker.apply
+78557	10.52	ray::RolloutWorker.apply
+127317	10.44	ray::RolloutWorker.apply
+3908619	1.56	/snap/code/190/usr/share/code/code /home/elle/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/d...
+3590798	0.63	/snap/code/190/usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=e...
+3590679	0.60	/snap/code/190/usr/share/code/code --type=renderer --crashpad-handler-pid=3590626 --enable-crash-rep...
+2784	0.55	/snap/firefox/3836/usr/lib/firefox/firefox
+792769	0.47	/snap/firefox/3836/usr/lib/firefox/firefox -contentproc -childID 164 -isForBrowser -prefsLen 28700 -...
+3572993	0.40	/usr/bin/gnome-shell
+Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[0m
